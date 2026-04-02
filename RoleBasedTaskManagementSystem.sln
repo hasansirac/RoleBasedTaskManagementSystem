@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoleBasedTaskManagementSystem.Domain", "RoleBasedTaskManagementSystem.Domain\RoleBasedTaskManagementSystem.Domain.csproj", "{6D29B22A-DF2B-4BFD-8E85-FB261232B99C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoleBasedTaskManagementSystem.Application", "RoleBasedTaskManagementSystem.Application\RoleBasedTaskManagementSystem.Application.csproj", "{031EE038-64ED-434D-A368-399D9C381505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoleBasedTaskManagementSystem.Persistence", "RoleBasedTaskManagementSystem.Persistence\RoleBasedTaskManagementSystem.Persistence.csproj", "{F692023E-4DE9-483B-B77E-82DE7EF7C7CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoleBasedTaskManagementSystem.Infrastructure", "RoleBasedTaskManagementSystem.Infrastructure\RoleBasedTaskManagementSystem.Infrastructure.csproj", "{BCA9FDF2-7E90-4D4A-88B8-5C86123814A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoleBasedTaskManagementSystem.WebAPI", "RoleBasedTaskManagementSystem.WebAPI\RoleBasedTaskManagementSystem.WebAPI.csproj", "{79B2BE4D-E6FE-48B3-84CB-CAAD899BAFDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D29B22A-DF2B-4BFD-8E85-FB261232B99C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D29B22A-DF2B-4BFD-8E85-FB261232B99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D29B22A-DF2B-4BFD-8E85-FB261232B99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D29B22A-DF2B-4BFD-8E85-FB261232B99C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{031EE038-64ED-434D-A368-399D9C381505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{031EE038-64ED-434D-A368-399D9C381505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{031EE038-64ED-434D-A368-399D9C381505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{031EE038-64ED-434D-A368-399D9C381505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F692023E-4DE9-483B-B77E-82DE7EF7C7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F692023E-4DE9-483B-B77E-82DE7EF7C7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F692023E-4DE9-483B-B77E-82DE7EF7C7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F692023E-4DE9-483B-B77E-82DE7EF7C7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA9FDF2-7E90-4D4A-88B8-5C86123814A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA9FDF2-7E90-4D4A-88B8-5C86123814A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA9FDF2-7E90-4D4A-88B8-5C86123814A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA9FDF2-7E90-4D4A-88B8-5C86123814A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B2BE4D-E6FE-48B3-84CB-CAAD899BAFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B2BE4D-E6FE-48B3-84CB-CAAD899BAFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B2BE4D-E6FE-48B3-84CB-CAAD899BAFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B2BE4D-E6FE-48B3-84CB-CAAD899BAFDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
