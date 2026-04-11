@@ -1,6 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.25" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RoleBasedTaskManagementSystem.Domain\RoleBasedTaskManagementSystem.Domain.csproj" />
     <ProjectReference Include="..\RoleBasedTaskManagementSystem.Application\RoleBasedTaskManagementSystem.Application.csproj" />
   </ItemGroup>
