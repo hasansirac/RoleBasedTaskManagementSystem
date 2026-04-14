@@ -4,6 +4,16 @@
     <ProjectReference Include="..\RoleBasedTaskManagementSystem.Domain\RoleBasedTaskManagementSystem.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\Auth\" />
+    <Folder Include="DTOs\ActivityLog\" />
+    <Folder Include="DTOs\Dashboard\" />
+    <Folder Include="DTOs\Report\" />
+    <Folder Include="DTOs\Task\" />
+    <Folder Include="DTOs\Project\" />
+    <Folder Include="DTOs\User\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
