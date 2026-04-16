@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RoleBasedTaskManagementSystem.Persistence.Contexts;
 
@@ -11,9 +12,11 @@ using RoleBasedTaskManagementSystem.Persistence.Contexts;
 namespace RoleBasedTaskManagementSystem.Persistence.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260416205704_SeedRoles")]
+    partial class SeedRoles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -136,21 +139,21 @@ namespace RoleBasedTaskManagementSystem.Persistence.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2026, 4, 17, 0, 16, 17, 752, DateTimeKind.Local).AddTicks(8250),
+                            CreatedDate = new DateTime(2026, 4, 16, 23, 57, 2, 366, DateTimeKind.Local).AddTicks(1002),
                             IsDeleted = false,
                             Name = "Admin"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2026, 4, 17, 0, 16, 17, 752, DateTimeKind.Local).AddTicks(8262),
+                            CreatedDate = new DateTime(2026, 4, 16, 23, 57, 2, 366, DateTimeKind.Local).AddTicks(1013),
                             IsDeleted = false,
                             Name = "Manager"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2026, 4, 17, 0, 16, 17, 752, DateTimeKind.Local).AddTicks(8263),
+                            CreatedDate = new DateTime(2026, 4, 16, 23, 57, 2, 366, DateTimeKind.Local).AddTicks(1014),
                             IsDeleted = false,
                             Name = "Member"
                         });
@@ -307,7 +310,7 @@ namespace RoleBasedTaskManagementSystem.Persistence.Migrations
                     b.HasOne("RoleBasedTaskManagementSystem.Domain.Entities.Role", "Role")
                         .WithMany("Users")
                         .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Role");

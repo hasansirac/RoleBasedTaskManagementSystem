@@ -15,6 +15,12 @@ namespace RoleBasedTaskManagementSystem.Persistence.Configurations
             builder.Property(x => x.Name)
                 .IsRequired()
                 .HasMaxLength(30);
+
+            builder.HasData(
+                new Role { Id = 1, Name = "Admin" },
+                new Role { Id = 2, Name = "Manager" },
+                new Role { Id = 3, Name = "Member" }
+            );
         }
     }
 }
